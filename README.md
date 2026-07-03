@@ -1,11 +1,17 @@
 # Warfare Framework
 
+![Game](https://img.shields.io/badge/game-Hearts%20of%20Iron%20IV-2f6f8f?style=flat-square)
+![Supported version](https://img.shields.io/badge/supported%20version-1.19.2-2f6f8f?style=flat-square)
+![Script](https://img.shields.io/badge/script-Clausewitz-2f6f8f?style=flat-square)
+![Localisation](https://img.shields.io/badge/localisation-English-2f6f8f?style=flat-square)
+
 Warfare Framework is a Hearts of Iron IV balance mod for the 1.19 game line. It reshapes infantry roles, artillery progression, terrain combat modifiers, selected air and naval defines, and a small set of support-company and AI-template rules.
 
 The mod is intentionally direct: most changes are made through readable overrides in `common/`, with localisation and interface bindings kept in their standard HOI4 folders.
 
 ## Contents
 
+- [Version and Testing Status](#version-and-testing-status)
 - [Compatibility](#compatibility)
 - [Installation](#installation)
 - [Design Direction](#design-direction)
@@ -15,8 +21,15 @@ The mod is intentionally direct: most changes are made through readable override
 - [Terrain](#terrain)
 - [Air, Navy, and Defines](#air-navy-and-defines)
 - [AI Templates](#ai-templates)
+- [Known Issues / Current Limitations](#known-issues--current-limitations)
 - [Project Layout](#project-layout)
 - [Development Notes](#development-notes)
+
+## Version and Testing Status
+
+Warfare Framework has been tested and adjusted for **Hearts of Iron IV 1.19.2 Regular Update**.
+
+Other game versions are not guaranteed to behave the same way. Later patches may change defines, technology layout, AI behaviour, or terrain handling, so compatibility should be rechecked after any HOI4 update.
 
 ## Compatibility
 
@@ -26,6 +39,7 @@ The mod is intentionally direct: most changes are made through readable override
 | Supported version | `1.19.*` |
 | Mod name | `Warfare Framework` |
 | Terrain handling | `replace_path="common/terrain"` |
+| Known compatibility | Vanilla HOI4 1.19.2 is the tested baseline. Other mod combinations are unverified unless tested in-game, especially mods that edit terrain, units, equipment, technologies, defines, AI templates, or localisation. |
 
 ## Installation
 
@@ -240,6 +254,17 @@ AI templates are defined in `common/ai_templates/ww_units_generic.txt`.
 
 The intent is for AI countries to remain mostly line/light infantry weighted while using elite formations sparingly. Heavy Artillery appears only in the low-weight elite template.
 
+## Known Issues / Current Limitations
+
+- Naval invasion and naval dominance flow is still experimental. The mod reduces hard-lock behavior, but extreme cases such as direct English Channel invasions may still need more testing.
+- `CONVOY_BLOCKED_BY_ENEMY_CONTROLLED_REGION = false` may affect general convoy routing beyond naval invasions. This is intentional for now, but needs longer campaign testing.
+- Tank balance has not received a dedicated pass yet. Tanks may still feel too efficient or too frustrating in some situations.
+- Air Attack module economy has not received a full designer pass yet. Current air changes mainly rebalance detection, mission efficiency, and agility.
+- Special-force battalions are currently disabled as part of the infantry-role redesign. Future special-force behavior may be represented through training or support systems instead of separate battalion types.
+- Current balance is primarily tested against AI, not multiplayer.
+- The mod fully overrides `common/terrain`, so compatibility with other terrain-changing mods is limited.
+- Compatibility with other mods has not been comprehensively tested. Treat mixed load orders as unsupported unless verified in-game.
+- AI templates are functional but still conservative. AI usage of Light Infantry, Elite Infantry, and Heavy Artillery may need more campaign testing.
 ## Project Layout
 
 | Path | Purpose |
