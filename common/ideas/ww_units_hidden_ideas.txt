@@ -1,0 +1,16 @@
+ideas = {
+	hidden_ideas = {
+		ww_global_air_mission_efficiency = {
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				air_mission_efficiency = 0.25
+				air_detection = 0.15
+			}
+		}
+	}
+}

@@ -1,0 +1,49 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_unit_ww_light_infantry_battalion_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/ww_light_infantry_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_ww_light_infantry_battalion_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_ww_light_infantry_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_ww_elite_infantry_battalion_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/ww_elite_infantry_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_ww_elite_infantry_battalion_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_ww_elite_infantry_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_ww_field_artillery_battalion_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_art_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_ww_field_artillery_battalion_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_art_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_ww_heavy_assault_artillery_battalion_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_art_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_ww_heavy_assault_artillery_battalion_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_art_icon.dds"
+		noOfFrames = 2
+	}
+}

@@ -1,0 +1,155 @@
+technologies = {
+	@1939 = 6
+	@1942 = 12
+	@1945 = 18
+	@1946 = 20
+	@signal_x = 14
+
+	tech_signal_company2 = {
+		signal_company = {
+			initiative = 0.15
+		}
+
+		armored_signal = {
+			initiative = 0.08
+			battalion_mult = {
+				category = category_all_armor
+				breakthrough = 0.01
+			}
+		}
+
+		path = {
+			leads_to_tech = tech_signal_company3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1939
+		folder = {
+			name = support_folder
+			position = { x = @signal_x y = @1939 }
+		}
+
+		categories = {
+			support_tech
+			signal_company_tech
+			electronics
+		}
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				factor = 1.2
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1939.1.1"
+			}
+		}
+	}
+
+	tech_signal_company3 = {
+		signal_company = {
+			initiative = 0.15
+		}
+
+		armored_signal = {
+			initiative = 0.08
+			battalion_mult = {
+				category = category_all_armor
+				breakthrough = 0.01
+			}
+		}
+
+		path = {
+			leads_to_tech = tech_signal_company4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.0
+		start_year = 1942
+		folder = {
+			name = support_folder
+			position = { x = @signal_x y = @1942 }
+		}
+
+		categories = {
+			support_tech
+			signal_company_tech
+			electronics
+		}
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				factor = 1.2
+				date > "1943.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1945.1.1"
+			}
+		}
+	}
+
+	tech_signal_company4 = {
+		signal_company = {
+			initiative = 0.20
+		}
+
+		armored_signal = {
+			initiative = 0.08
+			battalion_mult = {
+				category = category_all_armor
+				breakthrough = 0.01
+			}
+		}
+
+		research_cost = 2.0
+		start_year = 1945
+		folder = {
+			name = support_folder
+			position = { x = @signal_x y = @1945 }
+		}
+
+		categories = {
+			support_tech
+			signal_company_tech
+			electronics
+		}
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				factor = 1.2
+				date > "1946.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1947.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1948.1.1"
+			}
+		}
+	}
+}

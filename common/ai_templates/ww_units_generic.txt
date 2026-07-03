@@ -1,0 +1,76 @@
+ww_units_infantry_generic = {
+	role = infantry
+
+	upgrade_prio = {
+		base = 2
+	}
+
+	ww_light_infantry_line = {
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 2
+				num_of_military_factories > 12
+			}
+		}
+
+		target_template = {
+			weight = 1.0
+			match_value = 700.0
+
+			support = {
+				engineer = 1
+				recon = 1
+				artillery = 1
+			}
+
+			regimental_support = {
+				anti_tank_battery = 1
+				fire_support = 1
+			}
+
+			regiments = {
+				ww_light_infantry_battalion = 9
+				ww_field_artillery_battalion = 1
+			}
+		}
+
+		replace_at_match = 1.25
+		replace_with = ww_elite_infantry_line
+		target_min_match = 0.8
+	}
+
+	ww_elite_infantry_line = {
+		upgrade_prio = {
+			base = 0
+
+			modifier = {
+				add = 1
+				is_major = yes
+				num_of_military_factories > 35
+			}
+
+			modifier = {
+				add = 1
+				num_of_military_factories > 70
+			}
+		}
+
+		target_template = {
+			weight = 0.20
+			match_value = 900.0
+
+			support = {
+				engineer = 1
+			}
+
+			regiments = {
+				infantry = 6
+				ww_elite_infantry_battalion = 2
+				ww_field_artillery_battalion = 2
+				ww_heavy_assault_artillery_battalion = 1
+			}
+		}
+	}
+}

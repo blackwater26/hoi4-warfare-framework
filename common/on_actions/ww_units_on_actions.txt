@@ -1,0 +1,14 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = {
+					exists = yes
+					NOT = { has_idea = ww_global_air_mission_efficiency }
+				}
+
+				add_ideas = ww_global_air_mission_efficiency
+			}
+		}
+	}
+}

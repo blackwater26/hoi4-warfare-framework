@@ -1,0 +1,170 @@
+# Warfare Framework - Combat battalions.
+
+sub_units = {
+
+
+	ww_light_infantry_battalion = {
+		abbreviation = "LIT"
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 1001
+		ai_priority = 200
+		active = yes
+
+		type = {
+			infantry
+		}
+
+		group = infantry
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+
+		combat_width = 2
+		max_organisation = 65
+		max_strength = 21
+		default_morale = 0.35
+		soft_attack = -0.167
+		hard_attack = -0.5
+		defense = -0.182
+		breakthrough = 0.667
+		ap_attack = 0
+		maximum_speed = 0.10
+		supply_consumption = 0.045
+		weight = 0.35
+		manpower = 850
+		training_time = 100
+
+		need = {
+			infantry_equipment = 85
+		}
+	}
+
+	ww_elite_infantry_battalion = {
+		abbreviation = "ELT"
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 1002
+		ai_priority = 200
+		active = yes
+
+		type = {
+			infantry
+		}
+
+		group = infantry
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+
+		combat_width = 2
+		max_organisation = 75
+		max_strength = 30
+		default_morale = 0.65
+		soft_attack = 0.667
+		hard_attack = 0.5
+		defense = 0.364
+		breakthrough = 3.667
+		ap_attack = 0.5
+		maximum_speed = 0.05
+		supply_consumption = 0.075
+		weight = 0.45
+		manpower = 1000
+		experience_gain_army_unit_factor = 0.65
+		training_time = 210
+		experience_loss_factor = -0.00556
+
+		need = {
+			infantry_equipment = 160
+			support_equipment = 35
+		}
+	}
+
+	ww_field_artillery_battalion = {
+		abbreviation = "ART"
+		sprite = artillery
+		map_icon_category = infantry
+		priority = 1003
+		ai_priority = 100
+		active = yes
+		is_artillery_brigade = yes
+
+		type = {
+			infantry
+			artillery
+		}
+
+		group = combat_support
+		categories = {
+			category_army
+			category_line_artillery
+			category_artillery
+		}
+
+		combat_width = 3
+		max_organisation = 25
+		max_strength = 8
+		default_morale = 0.10
+		soft_attack = 0.10
+		hard_attack = 0
+		defense = 0.05
+		breakthrough = -0.10
+		ap_attack = 0
+		maximum_speed = -0.10
+		supply_consumption = 0.180
+		weight = 0.80
+		manpower = 500
+		training_time = 120
+
+		need = {
+			artillery_equipment = 36
+		}
+	}
+
+	ww_heavy_assault_artillery_battalion = {
+		abbreviation = "HAA"
+		sprite = artillery
+		map_icon_category = infantry
+		priority = 1004
+		ai_priority = 50
+		active = yes
+		is_artillery_brigade = yes
+
+		type = {
+			infantry
+			artillery
+		}
+
+		group = combat_support
+		categories = {
+			category_army
+			category_line_artillery
+			category_artillery
+		}
+
+		combat_width = 3
+		max_organisation = 23.75
+		max_strength = 8
+		default_morale = 0.10
+		soft_attack = 0.35
+		hard_attack = 0.35
+		defense = -0.10
+		breakthrough = 0.60
+		ap_attack = 0.35
+		maximum_speed = -0.25
+		supply_consumption = 0.234
+		weight = 0.80
+		manpower = 500
+		training_time = 156
+
+		need = {
+			artillery_equipment = 54
+		}
+	}
+}

@@ -1,0 +1,12 @@
+﻿l_english:
+ ww_light_infantry_battalion: "Light Infantry"
+ ww_light_infantry_battalion_desc: "Mobile infantry battalion with lower supply and equipment needs."
+ ww_elite_infantry_battalion: "Elite Infantry"
+ ww_elite_infantry_battalion_desc: "Veteran infantry battalion with stronger combat performance and longer training."
+ ww_field_artillery_battalion: "Field Artillery"
+ ww_field_artillery_battalion_desc: "Field artillery battalion focused on heavy soft attack."
+ ww_heavy_assault_artillery_battalion: "Heavy Artillery"
+ ww_heavy_assault_artillery_battalion_desc: "Heavy artillery battalion built for breakthrough assaults at higher supply and equipment cost."
+ artillery_equipment_4: "Late Artillery"
+ artillery_equipment_4_short: "Late Artillery"
+ artillery_equipment_4_desc: "Late-war artillery with improved anti-armor performance and heavier firepower."
