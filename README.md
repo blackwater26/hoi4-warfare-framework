@@ -5,6 +5,7 @@
 ![Made for](https://img.shields.io/badge/Made%20for-Hearts%20of%20Iron%20IV-b91c1c?style=flat&labelColor=555555)
 ![Script](https://img.shields.io/badge/Script-Clausewitz-2563eb?style=flat&labelColor=555555)
 ![Localisation](https://img.shields.io/badge/Localisation-English-7c3aed?style=flat&labelColor=555555)
+![Stars](https://img.shields.io/github/stars/blackwater26/hoi4-warfare-framework?style=flat&label=Stars&labelColor=555555&color=f59e0b)
 
 Warfare Framework is a Hearts of Iron IV balance mod for the 1.19 game line. It reshapes infantry roles, artillery progression, terrain combat modifiers, selected air and naval defines, and a small set of support-company and AI-template rules.
 
@@ -98,15 +99,37 @@ Warfare Framework keeps the land-combat roster compact and distinct:
 
 ## Battalions
 
-These are battalion-level modifiers and costs as currently implemented.
+Battalion data is split by purpose so the numbers stay readable in GitHub's narrow README view.
 
-| Battalion | Width | Org | HP | Recovery | Soft | Hard | Defense | Breakthrough | Piercing | Speed | Supply | Weight | Manpower | Training | Equipment |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |
-| Line Infantry | 2 | 60 | 25 | 0.30 | 0 | 0 | 0 | 0.333 | 0.25 | -0.05 | 0.070 | 0.50 | 1000 | 90 | 100 infantry equipment |
-| Light Infantry | 2 | 65 | 21 | 0.35 | -0.167 | -0.5 | -0.182 | 0.667 | 0 | 0.10 | 0.045 | 0.35 | 850 | 100 | 85 infantry equipment |
-| Elite Infantry | 2 | 75 | 30 | 0.65 | 0.667 | 0.5 | 0.364 | 3.667 | 0.5 | 0.05 | 0.075 | 0.45 | 1000 | 210 | 160 infantry equipment, 35 support equipment |
-| Field Artillery | 3 | 25 | 8 | 0.10 | 0.10 | 0 | 0.05 | -0.10 | 0 | -0.10 | 0.180 | 0.80 | 500 | 120 | 36 artillery equipment |
-| Heavy Artillery | 3 | 23.75 | 8 | 0.10 | 0.35 | 0.35 | -0.10 | 0.60 | 0.35 | -0.25 | 0.234 | 0.80 | 500 | 156 | 54 artillery equipment |
+### Role and Core Stats
+
+| Battalion | Role | Width | Org | HP | Recovery |
+| --- | --- | ---: | ---: | ---: | ---: |
+| Line Infantry | Standard infantry backbone | 2 | 60 | 25 | 0.30 |
+| Light Infantry | Lower-supply mobile infantry | 2 | 65 | 21 | 0.35 |
+| Elite Infantry | Expensive high-quality infantry | 2 | 75 | 30 | 0.65 |
+| Field Artillery | Standard line artillery | 3 | 25 | 8 | 0.10 |
+| Heavy Artillery | Supply-heavy assault artillery | 3 | 23.75 | 8 | 0.10 |
+
+### Combat Modifiers
+
+| Battalion | Soft | Hard | Defense | Breakthrough | Piercing | Speed |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Line Infantry | 0 | 0 | 0 | 0.333 | 0.25 | -0.05 |
+| Light Infantry | -0.167 | -0.5 | -0.182 | 0.667 | 0 | 0.10 |
+| Elite Infantry | 0.667 | 0.5 | 0.364 | 3.667 | 0.5 | 0.05 |
+| Field Artillery | 0.10 | 0 | 0.05 | -0.10 | 0 | -0.10 |
+| Heavy Artillery | 0.35 | 0.35 | -0.10 | 0.60 | 0.35 | -0.25 |
+
+### Cost and Logistics
+
+| Battalion | Supply | Weight | Manpower | Training | Equipment |
+| --- | ---: | ---: | ---: | ---: | --- |
+| Line Infantry | 0.070 | 0.50 | 1000 | 90 | 100 infantry equipment |
+| Light Infantry | 0.045 | 0.35 | 850 | 100 | 85 infantry equipment |
+| Elite Infantry | 0.075 | 0.45 | 1000 | 210 | 160 infantry equipment, 35 support equipment |
+| Field Artillery | 0.180 | 0.80 | 500 | 120 | 36 artillery equipment |
+| Heavy Artillery | 0.234 | 0.80 | 500 | 156 | 54 artillery equipment |
 
 Elite Infantry also has:
 
@@ -116,7 +139,6 @@ experience_loss_factor = -0.00556
 ```
 
 The XP-loss value is tuned so a 9-battalion elite formation reaches roughly -5% total XP loss.
-
 ## Artillery Equipment
 
 `common/units/equipment/ww_artillery_equipment.txt` overrides the artillery equipment line.
