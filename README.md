@@ -1,10 +1,10 @@
 # Warfare Framework
 
-![Hearts of Iron IV](https://img.shields.io/badge/Hearts%20of%20Iron%20IV-Warfare%20Framework-111827?style=for-the-badge&labelColor=0f172a)
-![Supported Version](https://img.shields.io/badge/Supported-1.19.2-2563eb?style=for-the-badge&labelColor=0f172a)
-![Script](https://img.shields.io/badge/Script-Clausewitz-16a34a?style=for-the-badge&labelColor=0f172a)
-![Localisation](https://img.shields.io/badge/Localisation-English-7c3aed?style=for-the-badge&labelColor=0f172a)
-![License](https://img.shields.io/badge/License-Custom%20%7C%20Credit%20Required-f59e0b?style=for-the-badge&labelColor=0f172a)
+![License](https://img.shields.io/badge/License-Custom-555555?style=flat&labelColor=2b2f36)
+![Credit](https://img.shields.io/badge/Credit-required-111827?style=flat&labelColor=555555)
+![Made for](https://img.shields.io/badge/Made%20for-Hearts%20of%20Iron%20IV-b91c1c?style=flat&labelColor=555555)
+![Script](https://img.shields.io/badge/Script-Clausewitz-2563eb?style=flat&labelColor=555555)
+![Localisation](https://img.shields.io/badge/Localisation-English-7c3aed?style=flat&labelColor=555555)
 
 Warfare Framework is a Hearts of Iron IV balance mod for the 1.19 game line. It reshapes infantry roles, artillery progression, terrain combat modifiers, selected air and naval defines, and a small set of support-company and AI-template rules.
 
