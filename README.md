@@ -1,9 +1,10 @@
 # Warfare Framework
 
-![Game](https://img.shields.io/badge/game-Hearts%20of%20Iron%20IV-2f6f8f?style=flat-square)
-![Supported version](https://img.shields.io/badge/supported%20version-1.19.2-2f6f8f?style=flat-square)
-![Script](https://img.shields.io/badge/script-Clausewitz-2f6f8f?style=flat-square)
-![Localisation](https://img.shields.io/badge/localisation-English-2f6f8f?style=flat-square)
+![Hearts of Iron IV](https://img.shields.io/badge/Hearts%20of%20Iron%20IV-Warfare%20Framework-111827?style=for-the-badge&labelColor=0f172a)
+![Supported Version](https://img.shields.io/badge/Supported-1.19.2-2563eb?style=for-the-badge&labelColor=0f172a)
+![Script](https://img.shields.io/badge/Script-Clausewitz-16a34a?style=for-the-badge&labelColor=0f172a)
+![Localisation](https://img.shields.io/badge/Localisation-English-7c3aed?style=for-the-badge&labelColor=0f172a)
+![License](https://img.shields.io/badge/License-Custom%20%7C%20Credit%20Required-f59e0b?style=for-the-badge&labelColor=0f172a)
 
 Warfare Framework is a Hearts of Iron IV balance mod for the 1.19 game line. It reshapes infantry roles, artillery progression, terrain combat modifiers, selected air and naval defines, and a small set of support-company and AI-template rules.
 
@@ -22,6 +23,7 @@ The mod is intentionally direct: most changes are made through readable override
 - [Air, Navy, and Defines](#air-navy-and-defines)
 - [AI Templates](#ai-templates)
 - [Known Issues / Current Limitations](#known-issues--current-limitations)
+- [License](#license)
 - [Project Layout](#project-layout)
 - [Development Notes](#development-notes)
 
@@ -265,6 +267,13 @@ The intent is for AI countries to remain mostly line/light infantry weighted whi
 - The mod fully overrides `common/terrain`, so compatibility with other terrain-changing mods is limited.
 - Compatibility with other mods has not been comprehensively tested. Treat mixed load orders as unsupported unless verified in-game.
 - AI templates are functional but still conservative. AI usage of Light Infantry, Elite Infantry, and Heavy Artillery may need more campaign testing.
+
+## License
+
+Warfare Framework uses a custom license. Compatibility patches, submods, translations, balance patches, and integration work are allowed, but public releases must give clear credit to Warfare Framework.
+
+Do not reupload, repackage, or republish the complete mod as a separate project. See [LICENSE.md](LICENSE.md) for the full terms.
+
 ## Project Layout
 
 | Path | Purpose |
