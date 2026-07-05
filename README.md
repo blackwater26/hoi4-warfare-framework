@@ -22,6 +22,7 @@ The mod is intentionally direct: most changes are made through readable override
 - [Artillery Equipment](#artillery-equipment)
 - [Terrain](#terrain)
 - [Air, Navy, and Defines](#air-navy-and-defines)
+- [Espionage](#espionage)
 - [AI Templates](#ai-templates)
 - [Known Issues / Current Limitations](#known-issues--current-limitations)
 - [License](#license)
@@ -246,6 +247,19 @@ NDefines.NNavy.MISSION_DOMINANCE_RATIOS = {
 }
 ```
 
+## Espionage
+
+Espionage tuning is currently focused on slowing intelligence network expansion and making extra operative investment less explosive.
+
+| Define | Value | Intent |
+| --- | ---: | --- |
+| `OPERATIVE_BASE_INTEL_NETWORK_GAIN` | 0.25 | Lowers the baseline network growth rate. |
+| `OPERATIVE_MAX_INTEL_NETWORK_GAIN` | 1.00 | Caps maximum network growth at a controlled ceiling. |
+| `INTEL_NETWORK_GAIN_FROM_ADJACENCY_FACTOR` | 0.25 | Reduces network spread from adjacent controlled areas. |
+| `INTEL_NETWORK_GAIN_DECAY_PER_STEP_FACTOR` | 0.35 | Increases distance-based decay for network expansion. |
+| `INTEL_NETWORK_OPERATIVE_GAIN_STACKING_FACTOR` | 0.25 | Reduces the benefit from stacking multiple operatives. |
+
+These changes make spy networks slower to build and harder to snowball, but the final risk/reward balance still needs more campaign testing.
 
 ## Signal Company Initiative
 
@@ -284,6 +298,7 @@ The intent is for AI countries to remain mostly line/light infantry weighted whi
 - `CONVOY_BLOCKED_BY_ENEMY_CONTROLLED_REGION = false` may affect general convoy routing beyond naval invasions. This is intentional for now, but needs longer campaign testing.
 - Tank balance has not received a dedicated pass yet. Tanks may still feel too efficient or too frustrating in some situations.
 - Air Attack module economy has not received a full designer pass yet. Current air changes mainly rebalance detection, mission efficiency, and agility.
+- Current espionage tuning makes intelligence network expansion harder, but the risk/reward balance is not fully solved yet.
 - Special-force battalions are currently disabled as part of the infantry-role redesign. Future special-force behavior may be represented through training or support systems instead of separate battalion types.
 - Current balance is primarily tested against AI, not multiplayer.
 - The mod fully overrides `common/terrain`, so compatibility with other terrain-changing mods is limited.

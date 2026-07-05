@@ -5,5 +5,5 @@ tags={
 	"Utilities"
 }
 name="Warfare Framework"
-supported_version="1.19.*"
 replace_path="common/terrain"
+supported_version="1.19.*"
